@@ -4,8 +4,8 @@ Queremos calcular los **bonos anuales** de los empleados de la empresa ficticia 
 
 ### Reglas del negocio
 - A todos los empleados, sin importar su puesto, se les da un bono anual que representa el **10% de su sueldo**.  
-- Para los **Gerentes**, el bono es del **20% de su sueldo**.  
-- Para los **Programadores**, el bono es un monto fijo de **$50.000**.  
+- Para los **Gerentes**, al bono general se le suma el **20% de su sueldo**.  
+- Para los **Programadores**, al bonon general se le suma un monto fijo de **$50.000**.  
 
 ---
 
@@ -14,6 +14,7 @@ Queremos calcular los **bonos anuales** de los empleados de la empresa ficticia 
 2. **Instanciar** los siguientes empleados:  
 
    ```js
+   let empleado = new Empleado("Ana López", 400000)
    let gerente = new Gerente("Carlos Pérez", 800000);
    let programador = new Programador("Lucía Gómez", 600000);
 

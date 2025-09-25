@@ -27,9 +27,11 @@ class Programador extends Empleado {
     }
 }
 
+let empleado = new Empleado("Ana López", 400000)
 let gerente = new Gerente("Carlos Pérez", 800000)
 let programador = new Programador("Lucía Gómez", 600000)
-const empleados = [gerente, programador];
+
+const empleados = [empleado, gerente, programador];
 
 for (const empleado of empleados) {
     console.log(empleado.info());
